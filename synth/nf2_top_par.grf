@@ -1,0 +1,1086 @@
+Release 10.1 - par K.31 (lin)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Fri Mar 01 11:38:54 2013
+
+  SmartGuide Results
+  ------------------
+  This section describes the guide results after invoking the Router. This
+  report accurately reflects the differences between the input design
+  and the guide design.
+
+  Number of Components in the input design    |  14814
+    Number of guided Components               |  14632 out of  14814  98.8%
+    Number of re-implemented Components       |    138 out of  14814   0.9%
+    Number of new/changed Components          |     44 out of  14814   0.3%
+  Number of Nets in the input design          |  37726
+    Number of guided Nets                     |  36231 out of  37726  96.0%
+    Number of partially guided Nets           |    633 out of  37726   1.7%
+    Number of re-routed Nets                  |    768 out of  37726   2.0%
+    Number of new/changed Nets                |     94 out of  37726   0.2%
+
+
+The following Components were re-implemented.
+---------------------------------------------
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(63)10 : SLICE_X68Y99.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(55)5 : SLICE_X59Y89.
+ nf2_core/user_data_path/oq_in_data(18) : SLICE_X52Y86.
+ nf2_core/user_data_path/output_port_lookup/input_fifo/fifo/wr_ptr(2) : SLICE_X52Y84.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/Mram_lut1 : RAMB16_X4Y12.
+ nf2_core/user_data_path/output_port_lookup/input_fifo/fifo/Mram_queue2 : RAMB16_X4Y11.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64_rx_fifo_din(18) : SLICE_X74Y124.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/N1690 : SLICE_X60Y119.
+ nf2_core/user_data_path/in_arb_in_reg_addr(0) : SLICE_X74Y125.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_wr_addr(1) : SLICE_X70Y122.
+ nf2_core/core_256kb_0_reg_wr_data(264) : SLICE_X56Y28.
+ nf2_core/user_data_path/output_port_lookup/input_fifo/fifo/rd_ptr(2) : SLICE_X54Y88.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next_or0000 : SLICE_X55Y85.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/control_reg_nxt_cmp_eq0000 : SLICE_X55Y27.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_cnt(2) : SLICE_X60Y29.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N9 : SLICE_X81Y103.
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/rd_0_data(62) : SLICE_X33Y74.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N71 : SLICE_X57Y90.
+ nf2_core/user_data_path/oq_in_data(0) : SLICE_X63Y90.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU2/U0/din_q<12> : SLICE_X74Y121.
+ nf2_core/user_data_path/oq_in_data(8) : SLICE_X67Y99.
+ nf2_core/user_data_path/oq_in_data(14) : SLICE_X100Y94.
+ nf2_core/user_data_path/oq_in_data(15) : SLICE_X72Y52.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state(1) : SLICE_X61Y90.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state(5) : SLICE_X60Y89.
+ nf2_core/user_data_path/output_port_lookup/mac_2(41) : SLICE_X76Y108.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N24 : SLICE_X71Y97.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N120 : SLICE_X68Y72.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N18 : SLICE_X65Y100.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N113 : SLICE_X77Y85.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next_and0000 : SLICE_X63Y87.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N71.126130 : SLICE_X67Y93.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64_rx_fifo_dout(71) : SLICE_X71Y109.
+ nf2_core/mac_groups[1].nf2_mac_grp/tx_queue/tx_fifo_64.gmac_tx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d3<8> :
+SLICE_X1Y45.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(10)28 : SLICE_X67Y95.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next_cmp_eq0007 : SLICE_X70Y74.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(11)28 : SLICE_X67Y91.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(12)28 : SLICE_X66Y98.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(13)28 : SLICE_X75Y83.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(14)28 : SLICE_X101Y94.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/N1717 : SLICE_X68Y120.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N81 : SLICE_X56Y89.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(15)28 : SLICE_X70Y68.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next_cmp_eq0058 : SLICE_X64Y95.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N45 : SLICE_X72Y87.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(8)28 : SLICE_X69Y99.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/in_fifo_rd_en2_1 : SLICE_X62Y91.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next_cmp_eq0006 : SLICE_X61Y89.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(9)28 : SLICE_X60Y94.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next_and00008 : SLICE_X74Y94.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N14.126171 : SLICE_X59Y80.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_cntr/generic_cntr_regs/deltas_2_1 :
+SLICE_X66Y137.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(10)28_1 : SLICE_X66Y93.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(11)13_2 : SLICE_X62Y95.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(13)28_1 : SLICE_X75Y75.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(14)13_2 : SLICE_X108Y104.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(9)28_1 : SLICE_X59Y82.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(14)28_1 : SLICE_X95Y92.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(15)28_1 : SLICE_X72Y79.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(48)26 : SLICE_X64Y97.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(57)22 : SLICE_X61Y94.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next_cmp_eq0002 : SLICE_X62Y87.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next_cmp_eq0005 : SLICE_X58Y90.
+ nf2_core/user_data_path/oq_in_data(32) : SLICE_X58Y88.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_cntr/generic_cntr_regs/reg_data_in_d1(27) :
+SLICE_X69Y154.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(5)11 : SLICE_X69Y107.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next(1)120 : SLICE_X76Y68.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next(1)121 : SLICE_X70Y88.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state(6) : SLICE_X66Y92.
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_out(27) : SLICE_X34Y82.
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_out(24) : SLICE_X32Y82.
+ nf2_core/user_data_path/output_port_lookup/arp_wr_ip(2) : SLICE_X75Y125.
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_out(16) : SLICE_X32Y83.
+ nf2_core/user_data_path/oq_in_data(25) : SLICE_X46Y90.
+ nf2_core/nf2_dma/nf2_dma_regs/state : SLICE_X35Y79.
+ nf2_core/user_data_path/output_port_lookup/eth_parser/empty : SLICE_X74Y96.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next_cmp_eq0000 : SLICE_X59Y90.
+ nf2_core/core_256kb_0_reg_wr_data(260) : SLICE_X61Y29.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/state : SLICE_X62Y28.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<12> : SLICE_X62Y117.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<29> : SLICE_X63Y117.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<25> : SLICE_X60Y114.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<13> : SLICE_X60Y116.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<4> : SLICE_X60Y117.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state(2) : SLICE_X60Y90.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_219(6)48 : SLICE_X6Y44.
+ nf2_core/nf2_dma/pkt_len(1) : SLICE_X58Y80.
+ nf2_core/user_data_path/output_port_lookup/arp_wr_ip(3) : SLICE_X80Y123.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/reg_data_out_mux0000(30)4 :
+SLICE_X80Y125.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<1> : SLICE_X62Y118.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<3> : SLICE_X63Y116.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N108 : SLICE_X61Y91.
+ nf2_core/core_256kb_0_reg_wr_data(256) : SLICE_X60Y27.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<7> : SLICE_X62Y116.
+ nf2_core/user_data_path/output_port_lookup/arp_wr_ip(21) : SLICE_X81Y122.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_din(11) : SLICE_X81Y125.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_219(5)50_2 : SLICE_X47Y42.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<24> : SLICE_X64Y113.
+ nf2_core/user_data_path/output_port_lookup/lpm_output_port(0) : SLICE_X64Y112.
+ nf2_core/user_data_path/output_port_lookup/arp_rd_addr(4) : SLICE_X73Y122.
+ nf2_core/user_data_path/output_port_lookup/arp_rd_addr(0) : SLICE_X73Y123.
+ nf2_core/cpu_q_dma_wr_data(1)(14) : SLICE_X73Y124.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/N491 : SLICE_X79Y122.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_din(12) : SLICE_X79Y119.
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_addr(2) : SLICE_X33Y77.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<30> : SLICE_X65Y111.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<20> : SLICE_X65Y112.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<18> : SLICE_X65Y113.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next_and0001 : SLICE_X44Y93.
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_out(6) : SLICE_X30Y72.
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_out(5) : SLICE_X30Y74.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<28> : SLICE_X64Y110.
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_out(31) : SLICE_X30Y73.
+ nf2_core/user_data_path/output_port_lookup/next_hop_ip(14) : SLICE_X75Y123.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU2/U0/din_q<28> : SLICE_X69Y135.
+ nf2_core/user_data_path/output_port_lookup/next_hop_ip(15) : SLICE_X74Y122.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state(0) : SLICE_X60Y91.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/N8 : SLICE_X69Y123.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/N120 : SLICE_X72Y121.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/next_hop_mac_result(7) : SLICE_X53Y86.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/ctrl_prev_is_0 : SLICE_X54Y87.
+ nf2_core/udp_reg_addr(0) : SLICE_X69Y122.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_cntr/generic_cntr_regs/deltas_8_2 :
+SLICE_X66Y136.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_cnt(0) : SLICE_X63Y28.
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/cam_lut_sm/lut_wr_data(7) : SLICE_X68Y122.
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/cam_lut_sm/lut_wr_data(12) : SLICE_X66Y134.
+ nf2_core/user_data_path/oq_in_data(17) : SLICE_X54Y84.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next_or000044 : SLICE_X54Y86.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/N115 : SLICE_X74Y123.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/N221 : SLICE_X62Y29.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU352/U0/rw_dec_clr_i_REPLICA_0 : SLICE_X69Y121.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU352/U0/int_reg_en_i_REPLICA_1 : SLICE_X73Y129.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next_cmp_eq00001_REPLICA_3 : SLICE_X64Y103.
+ nf2_core/user_data_path/output_port_lookup/op_lut_hdr_parser/in_port_decoded(6) : SLICE_X66Y96.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/dst_port(6) : SLICE_X68Y96.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(6)11 : SLICE_X69Y101.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(8)13_2 : SLICE_X69Y103.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N70.118341 : SLICE_X70Y98.
+
+
+The following Components are new/changed.
+-----------------------------------------
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N9 : SLICE_X81Y103.
+ nf2_core/user_data_path/oq_in_data(14) : SLICE_X100Y94.
+ nf2_core/user_data_path/oq_in_data(15) : SLICE_X72Y52.
+ nf2_core/user_data_path/output_port_lookup/mac_2(41) : SLICE_X76Y108.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N24 : SLICE_X71Y97.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N120 : SLICE_X68Y72.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N18 : SLICE_X65Y100.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N113 : SLICE_X77Y85.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next_and0000 : SLICE_X63Y87.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N71.126130 : SLICE_X67Y93.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64_rx_fifo_dout(71) : SLICE_X71Y109.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(10)28 : SLICE_X67Y95.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next_cmp_eq0007 : SLICE_X70Y74.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(11)28 : SLICE_X67Y91.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(12)28 : SLICE_X66Y98.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(13)28 : SLICE_X75Y83.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(14)28 : SLICE_X101Y94.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N81 : SLICE_X56Y89.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(15)28 : SLICE_X70Y68.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next_cmp_eq0058 : SLICE_X64Y95.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N45 : SLICE_X72Y87.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(8)28 : SLICE_X69Y99.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(9)28 : SLICE_X60Y94.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next_and00008 : SLICE_X74Y94.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N14.126171 : SLICE_X59Y80.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(10)28_1 : SLICE_X66Y93.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(11)13_2 : SLICE_X62Y95.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(13)28_1 : SLICE_X75Y75.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(14)13_2 : SLICE_X108Y104.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(9)28_1 : SLICE_X59Y82.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(14)28_1 : SLICE_X95Y92.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(15)28_1 : SLICE_X72Y79.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(57)22 : SLICE_X61Y94.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next_cmp_eq0002 : SLICE_X62Y87.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_cntr/generic_cntr_regs/reg_data_in_d1(27) :
+SLICE_X69Y154.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(5)11 : SLICE_X69Y107.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next(1)120 : SLICE_X76Y68.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next(1)121 : SLICE_X70Y88.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU352/U0/rw_dec_clr_i_REPLICA_0 : SLICE_X69Y121.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU352/U0/int_reg_en_i_REPLICA_1 : SLICE_X73Y129.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next_cmp_eq00001_REPLICA_3 : SLICE_X64Y103.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(6)11 : SLICE_X69Y101.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(8)13_2 : SLICE_X69Y103.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N70.118341 : SLICE_X70Y98.
+
+
+The following Nets were re-routed.
+----------------------------------
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N68.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N89.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next_cmp_eq0059.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next_cmp_eq0072.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N62.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next_cmp_eq0000.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next_cmp_eq0058.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/dst_port(1).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N81.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N78.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/dst_port(3).
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_out(11).
+ nf2_core/mac_groups[0].nf2_mac_grp/rx_pkt_byte_cnt(5).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64_rx_fifo_dout(52).
+ nf2_core/user_data_path/output_port_lookup/ip_new_checksum(15).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N76.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(63)10.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N64.
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(20).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64_rx_fifo_din(31).
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_out(21).
+ nf2_core/core_256kb_0_reg_addr(197).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/dst_port(7).
+ nf2_core/user_data_path/output_port_lookup/mac_0(23).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/ctrl_prev_is_0_cmp_eq0000.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state(1).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state(3).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(55)5.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N77.
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(59).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next_and0001.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N105.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N2.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next_and0000.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(59)22.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(59)5.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N79.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N67.
+ nf2_core/user_data_path/output_port_lookup/mac_2(23).
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(0).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_cnt(2).
+ nf2_core/user_data_path/output_port_lookup/mac_1(25).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(58)5.
+ nf2_core/user_data_path/output_port_lookup/in_fifo_ctrl(2).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_ctrl(7).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/mac_1_31_not0001.
+ nf2_core/user_data_path/output_port_lookup/mac_2(44).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(34).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(33).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(35).
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_out(31).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(18).
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(2).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(18).
+ nf2_core/user_data_path/oq_in_data(18).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_cntr/generic_cntr_regs/reg_data_in_d1(26).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU2/U0/din_q<14>.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_cntr/generic_cntr_regs/reg_data_in_d1(27).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(27).
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(11).
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_out(16).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64_rx_fifo_din(14).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64_rx_fifo_din(1).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64_rx_fifo_din(9).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/mem/dout_mem<36>.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/mem/dout_mem<37>.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/mem/dout_mem<38>.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/mem/dout_mem<13>.
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(36).
+ nf2_core/out_data(7)(16).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/mem/dout_mem<10>.
+ nf2_core/out_data(6)(16).
+ nf2_core/out_data(0)(12).
+ nf2_core/out_data(0)(17).
+ nf2_core/in_data(3)(9).
+ nf2_core/user_data_path/output_port_lookup/input_fifo/fifo/wr_ptr(2).
+ nf2_core/user_data_path/output_port_lookup/input_fifo/fifo/wr_ptr(3).
+ nf2_core/user_data_path/output_port_lookup/input_fifo/fifo/Result(2)2.
+ nf2_core/user_data_path/output_port_lookup/input_fifo/fifo/Result(3)2.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64_rx_fifo_din(18).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/mem/dout_mem<20>.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/mem/dout_mem<23>.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/mem/dout_mem<33>.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/mem/dout_mem<56>.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/mem/dout_mem<57>.
+ nf2_core/mac_groups[1].nf2_mac_grp/tx_queue/tx_fifo_64.gmac_tx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d3<8>.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/N57.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/dst_port(5).
+ nf2_core/user_data_path/output_port_lookup/mac_0(21).
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/rd_0_data(63).
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/rd_0_data(44).
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/rd_0_data(62).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(37).
+ nf2_core/out_data(0)(43).
+ nf2_core/user_data_path/output_port_lookup/op_lut_hdr_parser/is_from_cpu_fifo/fifo/depth(1).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(16).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(1).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(32)19.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(19).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(5).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_wr_addr(2).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_wr_addr(1).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(0).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(2).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(3).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(4).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(6).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(7).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(8).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(9).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(10).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(11).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(12).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(13).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(14).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(15).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(17).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(18).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(20).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(21).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(22).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(23).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(24).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(25).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(26).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(27).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(28).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(29).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(30).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(31).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(32).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(33).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(34).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(35).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(0).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(1).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(2).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(3).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(4).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(5).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(6).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(7).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(8).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(9).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(10).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(11).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(12).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(13).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(14).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(15).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(16).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(17).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(18).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(19).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(20).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(21).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(22).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(23).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(24).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(25).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(26).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(27).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(28).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(29).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(30).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(31).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_mac(32).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(43).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(45).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/lut_wr_data(46).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_din(11).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_din(12).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_din(13).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_ip(1).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_ip(2).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_ip(10).
+ nf2_core/user_data_path/output_port_lookup/input_fifo/fifo/rd_ptr(3).
+ nf2_core/user_data_path/output_port_lookup/input_fifo/fifo/rd_ptr(2).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(0).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(1).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(3).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(7).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(8).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(10).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(12).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(14).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(15).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(17).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(25).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(31).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(32).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(33).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(38).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(39).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(40).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(41).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(42).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(43).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(44).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(45).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(46).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(47).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(48).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(49).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(50).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(51).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(52).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(53).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(54).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(55).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(56).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(57).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(58).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(60).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(61).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(62).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(63).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_ctrl(0).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_ctrl(1).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_ctrl(3).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_ctrl(4).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_ctrl(5).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_ctrl(6).
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/cam_lut_sm/lut_wr_data(7).
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/cam_lut_sm/lut_wr_data(12).
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/cam_lut_sm/lut_wr_data(15).
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/cam_lut_sm/lut_wr_data(30).
+ nf2_core/user_data_path/output_port_lookup/lpm_rd_ip(16).
+ nf2_core/user_data_path/output_port_lookup/eth_parser/empty.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/preprocess_vld.
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_in(2).
+ nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_dout(0).
+ nf2_core/core_4mb_reg_addr(33).
+ nf2_core/core_256kb_0_reg_addr(202).
+ nf2_core/core_256kb_0_reg_addr(199).
+ nf2_core/core_256kb_0_reg_addr(200).
+ nf2_core/core_256kb_0_reg_addr(206).
+ nf2_core/core_256kb_0_reg_addr(198).
+ nf2_core/core_256kb_0_reg_addr(204).
+ nf2_core/core_256kb_0_reg_addr(205).
+ nf2_core/user_data_path/oq_in_data(0).
+ nf2_core/user_data_path/oq_in_data(1).
+ nf2_core/user_data_path/oq_in_data(2).
+ nf2_core/user_data_path/oq_in_data(3).
+ nf2_core/user_data_path/oq_in_data(4).
+ nf2_core/user_data_path/oq_in_data(5).
+ nf2_core/user_data_path/oq_in_data(6).
+ nf2_core/user_data_path/oq_in_data(7).
+ nf2_core/user_data_path/oq_in_data(8).
+ nf2_core/user_data_path/oq_in_data(10).
+ nf2_core/user_data_path/oq_in_data(12).
+ nf2_core/user_data_path/oq_in_data(13).
+ nf2_core/user_data_path/oq_in_data(14).
+ nf2_core/user_data_path/oq_in_data(15).
+ nf2_core/user_data_path/oq_in_data(17).
+ nf2_core/user_data_path/oq_in_data(19).
+ nf2_core/user_data_path/oq_in_data(25).
+ nf2_core/user_data_path/oq_in_data(32).
+ nf2_core/user_data_path/oq_in_data(33).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64_rx_fifo_dout(0).
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_in(4).
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_in(5).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/N44.
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_in(15).
+ nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_fifo_dout(67).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/N479.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/N1717.
+ nf2_core/user_data_path/output_port_lookup/next_hop_ip(16).
+ nf2_core/user_data_path/output_port_lookup/next_hop_ip(15).
+ nf2_core/user_data_path/output_port_lookup/next_hop_ip(14).
+ nf2_core/user_data_path/output_port_lookup/next_hop_ip(11).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/N1724.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/N1508.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_cnt(0).
+ nf2_core/core_256kb_0_reg_wr_data(256).
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_in(21).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_0(46).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N65.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state(5).
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_in(24).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(61)5.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(48)5.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(48)26.
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_in(27).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/Mmux_reg_data_out_mux0000195.
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_in(31).
+ nf2_core/user_data_path/output_port_lookup/mac_2(45).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/mac_grp_reg_req_d1.
+ nf2_core/core_256kb_0_reg_wr_data(257).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/output_port_latched(4).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/N1690.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU19/A4'.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(33)19.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/N120.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(56)22.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/N119.
+ nf2_core/udp_reg_addr(0).
+ nf2_core/user_data_path/udp_reg_addr_in(0).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/reg_data_out_mux0000(26)18.
+ nf2_core/user_data_path/udp_reg_master/reg_addr_out_mux0000(0).
+ nf2_core/user_data_path/in_arb_in_reg_addr(0).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/N1679.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/N20.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/cam_wr_addr_mux0000(1).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/cam_wr_addr_mux0000(2).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/N116.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/N1685.
+ nf2_core/core_256kb_0_reg_wr_data(261).
+ nf2_core/core_256kb_0_reg_wr_data(264).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_in_addsub0000(8).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/N115.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_cntr/generic_cntr_regs/N29.
+ nf2_core/core_256kb_0_reg_wr_data(284).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_in_addsub0000(28).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_in(28).
+ nf2_core/core_256kb_0_reg_wr_data(265).
+ nf2_core/core_256kb_0_reg_wr_data(283).
+ nf2_core/core_256kb_0_reg_wr_data(260).
+ nf2_core/core_256kb_0_reg_wr_data(287).
+ nf2_core/core_256kb_0_reg_wr_data(285).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_in(30).
+ nf2_core/core_256kb_0_reg_wr_data(282).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_cntr/generic_cntr_regs/N25.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/state_nxt_cmp_eq0000.
+ nf2_core/core_4mb_reg_wr_data(60).
+ nf2_core/user_data_path/output_port_lookup/pkt_sent_from_cpu.
+ nf2_core/user_data_path/output_port_lookup/input_fifo/fifo/Result(2)1.
+ nf2_core/user_data_path/output_port_lookup/input_fifo/fifo/Result(3)1.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next_or000044.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N117.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next_or0000.
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(3).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64_rx_fifo_dout(21).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/cam_match_encoded.
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(44).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reset_long(0).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_0(49).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64_rx_fifo_dout(20).
+ nf2_core/user_data_path/output_queues/input_fifo_nearly_full.
+ nf2_core/user_data_path/output_port_lookup/mac_0(20).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_0(2).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_1(52).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_0(52).
+ nf2_core/user_data_path/output_port_lookup/mac_0(22).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_0(7).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_1(39).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/Mmux_reg_data_out_mux00003032.
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_0(61).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_1(40).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_0(40).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_0(60).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_0(54).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_0(3).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_ctrl_1(3).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_1(35).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_0(55).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_1(23).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_1(62).
+ nf2_core/user_data_path/output_port_lookup/mac_3(38).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(5)5.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(6)10.
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_0(57).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_1(25).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_0(6).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(4)5.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(7)5.
+ nf2_core/user_data_path/output_port_lookup/mac_2(14).
+ nf2_core/user_data_path/in_arb_in_reg_data(25).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state(2).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next_or0001.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_cntr/generic_cntr_regs/deltas_8_2.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_cntr/generic_cntr_regs/N39.
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_1(22).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_0(22).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state(0).
+ nf2_core/user_data_path/oq_in_rdy.
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_0(42).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/control_reg_nxt_cmp_eq0000.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU352/U0/Mcompar_rd_warn_2_cmp_eq0000_cy<4>.
+ nf2_core/user_data_path/output_port_lookup/mac_2(22).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_cnt_nxt(2).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_cntr/generic_cntr_regs/N27.
+ nf2_core/core_reg_wr_data(4).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/dst_port(6).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_0(34).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_0(39).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/dst_port(0).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_0(35).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_ctrl_0(6).
+ nf2_core/nf2_dma/pkt_len(1).
+ nf2_core/mac_groups[0].nf2_mac_grp/tx_pkt_byte_cnt(8).
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_0(14).
+ nf2_core/core_256kb_0_reg_addr(203).
+ nf2_core/core_256kb_0_reg_addr(201).
+ nf2_core/mac_groups[0].nf2_mac_grp/disable_crc_gen.
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_in_addsub0000(8).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/N88.
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_in(8).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/tx_word_cnt_delta_or0000.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64_rx_fifo_dout(1).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/ctrl_prev_is_0_cmp_eq000012.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/ctrl_prev_is_0_cmp_eq000025.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N66.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next(2)128.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/ctrl_prev_is_0.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N85.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next(6)115.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N71.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(2)5.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(2)10.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state(6).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64_rx_fifo_dout(26).
+ nf2_core/user_data_path/output_port_lookup/mac_3(39).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(7)10.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(1)5.
+ nf2_core/user_data_path/output_port_lookup/arp_wr_ip(2).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/N471.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(0)10.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/out_ctrl_nxt(1).
+ nf2_core/in_ctrl(3)(1).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(0).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(1).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU2/U0/din_q<12>.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU2/U0/din_q<13>.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(2).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(3).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(4).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(5).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(6).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(8).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64_rx_fifo_dout(10).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/out_data_nxt(10).
+ nf2_core/in_data(3)(10).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_cntr/generic_cntr_regs/deltas_6_2.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_cntr/generic_cntr_regs/Result(2)6.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(10).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(12).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(14).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(15).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(33)0.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(33).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N631.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next(1)1.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next(5)1.
+ nf2_core/user_data_path/output_port_lookup/op_lut_hdr_parser/is_from_cpu_fifo/fifo/Result(1)2.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N63.
+ nf2_core/user_data_path/output_port_lookup/to_cpu_output_port(0).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N10.
+ nf2_core/user_data_path/output_port_lookup/to_cpu_output_port(1).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/dst_port_next(1).
+ nf2_core/user_data_path/output_port_lookup/to_cpu_output_port(2).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/dst_port_next(2).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/dst_port(2).
+ nf2_core/user_data_path/output_port_lookup/to_cpu_output_port(3).
+ nf2_core/user_data_path/output_port_lookup/to_cpu_output_port(4).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/dst_port(4).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N16.
+ nf2_core/user_data_path/output_port_lookup/to_cpu_output_port(5).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/dst_port_next(5).
+ nf2_core/user_data_path/output_port_lookup/to_cpu_output_port(6).
+ nf2_core/user_data_path/output_port_lookup/mac_1(24).
+ nf2_core/user_data_path/output_port_lookup/mac_2(40).
+ nf2_core/user_data_path/output_port_lookup/mac_2(41).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/reg_data_out_mux0000(30)4.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/reg_data_out_mux0000(30)9.
+ nf2_core/user_data_path/output_port_lookup/from_cpu_output_port(0).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next_cmp_eq0000.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N01.
+ nf2_core/user_data_path/output_port_lookup/is_from_cpu.
+ nf2_core/user_data_path/output_port_lookup/ip_checksum_is_good.
+ nf2_core/user_data_path/output_port_lookup/from_cpu_output_port(1).
+ nf2_core/user_data_path/output_port_lookup/from_cpu_output_port(2).
+ nf2_core/user_data_path/output_port_lookup/from_cpu_output_port(3).
+ nf2_core/user_data_path/output_port_lookup/from_cpu_output_port(4).
+ nf2_core/user_data_path/output_port_lookup/from_cpu_output_port(5).
+ nf2_core/user_data_path/output_port_lookup/from_cpu_output_port(6).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next(1)110.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/N409.
+ nf2_core/nf2_dma/nf2_dma_regs/_old_delta_191(4).
+ nf2_core/user_data_path/output_port_lookup/input_port_num(1).
+ nf2_core/user_data_path/output_port_lookup/mac_dst_port_num(1).
+ nf2_core/user_data_path/output_port_lookup/input_port_num(2).
+ nf2_core/user_data_path/output_port_lookup/mac_dst_port_num(2).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N45.
+ nf2_core/user_data_path/output_port_lookup/is_for_us.
+ nf2_core/user_data_path/output_port_lookup/is_broadcast.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N59.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N57.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N53.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N51.
+ nf2_core/user_data_path/output_port_lookup/ip_new_ttl(0).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/N14.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next_cmp_eq0006.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/in_fifo_rd_en2_1.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next_cmp_eq0005.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N49.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N47.
+ nf2_core/user_data_path/output_port_lookup/arp_lookup_hit.
+ nf2_core/user_data_path/output_port_lookup/input_port_num(0).
+ nf2_core/user_data_path/output_port_lookup/mac_dst_port_num(0).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N12.
+ nf2_core/user_data_path/output_port_lookup/to_cpu_output_port(7).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_cntr/generic_cntr_regs/deltas_2_1.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_cntr/generic_cntr_regs/Result(1)2.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/N111.
+ nf2_core/user_data_path/output_port_lookup/ip_new_ttl(2).
+ nf2_core/user_data_path/output_port_lookup/ip_new_ttl(3).
+ nf2_core/user_data_path/output_port_lookup/ip_new_ttl(4).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(0)5.
+ nf2_core/user_data_path/output_port_lookup/ip_new_ttl(5).
+ nf2_core/user_data_path/output_port_lookup/ip_new_ttl(1).
+ nf2_core/user_data_path/output_port_lookup/ip_new_ttl(6).
+ nf2_core/user_data_path/output_port_lookup/ip_new_ttl(7).
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(34).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/cam_match_encoded_addr(1).
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(35).
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(36).
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(37).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(53)19.
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(38).
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(39).
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(32).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(48)19.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU2/U0/din_q<24>.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/cam_match_encoded_addr(2).
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(41).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(57)22.
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(33).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(49)26.
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(43).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(32)0.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(32).
+ nf2_core/user_data_path/output_port_lookup/mac_3(37).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(0)21_2.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(5)10.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(1)10.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(3)5.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(3)10.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(4)10.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(6)5.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next(6)1.
+ nf2_core/user_data_path/output_port_lookup/mac_2(26).
+ nf2_core/user_data_path/output_port_lookup/eth_parser/mac_sel(18)11.
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_addr(2).
+ nf2_core/user_data_path/output_port_lookup/eth_parser/dst_MAC(13).
+ nf2_core/user_data_path/output_port_lookup/eth_parser/dst_MAC(12).
+ nf2_core/user_data_path/output_port_lookup/eth_parser/mac_sel(18).
+ nf2_core/user_data_path/output_port_lookup/eth_parser/mac_sel(32).
+ nf2_core/user_data_path/output_port_lookup/eth_parser/dst_MAC(35).
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_in(11).
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_out(27).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/reg_data_out_mux0000(31)4.
+ nf2_core/user_data_path/output_port_lookup/arp_rd_addr(1).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64_rx_fifo_dout(28).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64_rx_fifo_dout(29).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/N493.
+ nf2_core/core_reg_wr_data(1).
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_out(24).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/arp_ip_mux0000(2).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N90.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_cntr/generic_cntr_regs/N43.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_cntr/generic_cntr_regs/N411.
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_ctrl_0(1).
+ nf2_core/nf2_dma/nf2_dma_regs/_old_delta_191(0).
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_out(2).
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_out(3).
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_out(4).
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_out(5).
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_out(6).
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_in_addsub0000(6).
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_in_addsub0000(7).
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_in_addsub0000(9).
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_out(15).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/Madd_reg_file_in_addsub0000_lut(0).
+ nf2_core/nf2_dma/nf2_dma_regs/state.
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_in(16).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/_old_delta_201(10).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/_old_delta_201(11).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/N57.
+ nf2_core/nf2_dma/nf2_dma_regs/N15.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/N42.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in_addsub0000(2).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_219(5)28_1.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_219(6)48.
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(9).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(25).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/next_hop_mac_result(27).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/state.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/N53.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_219(5)50_2.
+ nf2_core/user_data_path/output_port_lookup/ip_new_checksum(4).
+ nf2_core/user_data_path/output_port_lookup/ip_new_checksum(6).
+ nf2_core/nf2_dma/nf2_dma_regs/old_delta_191_cmp_eq0005.
+ nf2_core/nf2_dma/nf2_dma_regs/state_nxt.
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_0(1).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_cntr/generic_cntr_regs/N2.
+ nf2_core/cpu_q_dma_wr_data(3)(22).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(53)10.
+ nf2_core/user_data_path/output_port_lookup/eth_parser/eth_fifo/empty_nxt.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/state_nxt.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_in(0).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/N423.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(61)10.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N82.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(49)10.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/reg_data_out_mux0000(26)40.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N651.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/next_hop_mac_result(43).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/N15.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable_12_mux0002.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<12>.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable_19_mux0002.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<19>.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/N8.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/N516.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable_29_mux0002.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<29>.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable_25_mux0002.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<25>.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable_27_mux0002.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<27>.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/N571.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable_13_mux0002.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<13>.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable_15_mux0002.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<15>.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable_4_mux0002.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<4>.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable_11_mux0002.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<11>.
+ nf2_core/core_reg_wr_data(23).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/N443.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64_rx_fifo_dout(66).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64_rx_fifo_dout(67).
+ nf2_core/user_data_path/output_port_lookup/arp_wr_ip(22).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/N465.
+ nf2_core/user_data_path/output_port_lookup/arp_wr_ip(3).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_cntr/generic_cntr_regs/N8.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/N221.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next(3)132.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next(2)1.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next(3)1.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64_rx_fifo_dout(50).
+ nf2_core/nf2_dma/nf2_dma_que_intfc/N22.
+ nf2_core/nf2_dma/nf2_dma_que_intfc/pkt_len_nxt(1).
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/next_hop_ip_result(14).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/N449.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/arp_ip_mux0000(3).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/reg_data_out_mux0000(12)45.
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/next_hop_ip_result(15).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/N491.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<1>.
+ nf2_core/user_data_path/input_arbiter/in_arb_regs/last_pkt_data_1(7).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/rx_q_underrun.
+ nf2_core/cpu_q_dma_wr_data(1)(14).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<3>.
+ nf2_core/user_data_path/output_port_lookup/arp_wr_ip(21).
+ nf2_core/nf2_dma/cpci_txfifo_wr_data(3).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable_1_mux0002.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable_8_mux0002.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<8>.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(54)10.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable_3_mux0002.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable_10_mux0002.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<10>.
+ nf2_core/mac_groups[2].nf2_mac_grp/tx_pkt_word_cnt(8).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/N40.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable_7_mux0002.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<7>.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable_14_mux0002.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<14>.
+ nf2_core/core_256kb_0_reg_wr_data(267).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/N467.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/arp_ip_mux0000(21).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/arp_ip_mux0000(22).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/cam_din_mux0000(20).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/cam_din_mux0000(18).
+ nf2_core/user_data_path/output_port_lookup/arp_rd_addr(0).
+ nf2_core/in_ctrl(5)(1).
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(12).
+ nf2_core/user_data_path/output_queues/oq_header_parser/full.
+ nf2_core/core_256kb_0_reg_rd_data(415).
+ nf2_core/in_data(5)(60).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/N12.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable_24_mux0002.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<24>.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable_26_mux0002.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<26>.
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/lookup_port_result(0).
+ nf2_core/user_data_path/output_port_lookup/lpm_output_port(0).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/N13.
+ nf2_core/user_data_path/output_port_lookup/arp_rd_addr(4).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU352/U0/Mcompar_rd_warn_1_cmp_eq0000_cy<1>.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU352/U0/Mcompar_rd_warn_1_cmp_eq0000_cy<3>.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU352/U0/Mcompar_rd_warn_1_cmp_eq0000_cy<4>.
+ nf2_core/nf2_dma/nf2_dma_que_intfc/cpu_q_dma_wr_data_nxt(1)(14).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/next_hop_mac_result(46).
+ nf2_core/cpu_q_dma_wr_data(1)(25).
+ nf2_core/udp_reg_addr(1).
+ nf2_core/cpu_q_dma_wr_data(1)(17).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/cam_din_mux0000(19).
+ nf2_core/user_data_path/output_port_lookup/ip_new_checksum(12).
+ nf2_core/user_data_path/input_arbiter/fifo_out_data(3)(10).
+ nf2_core/user_data_path/input_arbiter/fifo_out_data(0)(17).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable_30_mux0002.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<30>.
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(10).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable_20_mux0002.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<20>.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable_16_mux0002.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<16>.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable_18_mux0002.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<18>.
+ nf2_core/user_data_path/output_queues/parsed_pkt_word_len(3).
+ nf2_core/user_data_path/output_port_lookup/ip_new_checksum(7).
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_in(6).
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_in(3).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable_28_mux0002.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU351/U0/blkmem_match_disable<28>.
+ nf2_core/user_data_path/output_port_lookup/op_lut_hdr_parser/in_port_decoded(6).
+ nf2_core/user_data_path/output_port_lookup/from_cpu_output_port(7).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64_rx_fifo_dout(3).
+ nf2_core/in_data(2)(10).
+ nf2_core/cpu_q_dma_can_wr_pkt(2).
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/next_hop_ip_mux0000(14).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_cntr/generic_cntr_regs/N211.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_cntr/generic_cntr_regs/N23.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU2/U0/din_q<28>.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU2/U0/din_q<29>.
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/next_hop_ip_mux0000(15).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(48)32_2.
+ nf2_core/mac_groups[0].nf2_mac_grp/rx_pkt_dropped.
+ nf2_core/in_data(4)(44).
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(47).
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(23).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next(0)1.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU352/N10.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N97.
+ nf2_core/mac_groups[3].nf2_mac_grp/tx_queue/tx_fifo_64.gmac_tx_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_gc<4>.
+ nf2_core/user_data_path/output_port_lookup/ip_new_checksum(11).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU2/U0/din_q<9>.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/next_hop_mac_result(7).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64_rx_fifo_dout(15).
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(1).
+ nf2_core/in_data(3)(26).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_cntr/generic_cntr_regs/N31.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_cntr/generic_cntr_regs/Result(2)8.
+ nf2_core/core_256kb_0_reg_wr_data(273).
+ nf2_core/core_256kb_0_reg_wr_data(270).
+ nf2_core/core_256kb_0_reg_wr_data(276).
+ nf2_core/core_256kb_0_reg_wr_data(277).
+ nf2_core/core_256kb_0_reg_wr_data(272).
+ nf2_core/core_256kb_0_reg_wr_data(274).
+ nf2_core/in_data(5)(51).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next(0)110.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N107.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_cnt_nxt(0).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU2/U0/wr_addr_q<0>.
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/cam_lut_sm/lut_wr_data_mux0000(32).
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/cam_lut_sm/lut_wr_data_mux0000(27).
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/cam_lut_sm/lut_wr_data_mux0000(24).
+ nf2_core/in_data(5)(55).
+ nf2_core/in_data(5)(47).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(17).
+ nf2_core/core_256kb_0_reg_wr_data(278).
+ nf2_core/core_256kb_0_reg_wr_data(280).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/dst_port_next(6).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU2/U0/din_q<25>.
+
+
+The following Nets are new/changed.
+-----------------------------------
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N80.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N0.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N103.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N9.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N72.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N84.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N111.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N102.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N101.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N761.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N1031.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next_cmp_eq0002.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next_cmp_eq0007.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next_and0000.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(0)11.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(1)11.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(2)11.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(3)11.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(4)11.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(5)11.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(6)11.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(7)11.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(8)28.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(10)28.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(11)28.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(12)28.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(13)28.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(14)28.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(15)28.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next_or0001.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N86.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N24.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N22.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N20.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N18.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N4.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N120.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next(1)120.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next(1)121.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N113.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next_and000035.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next_and00008.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(10)28_1.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(10)13_2.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N61.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N92.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(11)28_1.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(11)13_2.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(12)28_1.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(12)13_2.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(13)28_1.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(13)13_2.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N55.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(14)28_1.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(14)13_2.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(15)28_1.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(15)13_2.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(8)13_2.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N74.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(8)28_1.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(9)13_2.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N70.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/pkt_sent_to_cpu_arp_miss_2.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next_cmp_eq0058_2.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(9)28_1.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(9)28.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N32.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N1111.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(50)18.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(51)18.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(52)18.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(53)18.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(54)18.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(55)18.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(48)18.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(49)18.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next(6)131.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N741.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N1011.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N109.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N661.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N721.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N99.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N801.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N701.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N115.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N781.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU352/U0/rw_dec_clr_i_REPLICA_0.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU352/U0/int_reg_en_i_REPLICA_1_lut.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU352/U0/int_reg_en_i_REPLICA_1.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/arp_cam/BU2/U0/wr_din_i<13>1_REPLICA_2.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/state_next_cmp_eq00001_REPLICA_3.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N26.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N14.
